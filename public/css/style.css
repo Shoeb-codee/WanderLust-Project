@@ -88,3 +88,26 @@ justify-content: center;
   gap: 2rem;
 
 }
+
+/* Responsive Styles */
+@media (max-width: 768px){
+  .container {
+    padding: 0 1rem;
+  }
+  /* Adjust cards and other elements that may be too wide on mobile */
+  .card-col {
+    margin-bottom: 1.5rem;
+  }
+  /* Ensure forms are padded consistently */
+  form.needs-validation {
+    padding: 0 1rem;
+  }
+  
+  /* Override grid sizing if necessary */
+  .col-md-6, .offset-md-3 {
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
