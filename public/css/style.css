@@ -110,4 +110,26 @@ justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .card {
+    height: 90%; /* Adjust height for smaller screens */
+  }
+}
+
+/* Card Grid for 4 Cards in a Row */
+.review-container .card {
+  height: 100%; /* Ensure consistent height */
+}
+
+@media (min-width: 992px) { /* Large screens (4 cards in a row) */
+  .review-container .col-md-3 {
+    flex: 0 0 25%; /* 25% width for 4 cards in a row */
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 768px) { /* Small screens (adjust height) */
+  .review-container .card {
+    height: auto; /* Adjust height for smaller screens */
+  }
 }

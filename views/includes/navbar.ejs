@@ -41,24 +41,26 @@
         <a class="nav-link" href="/listings">Explore</a>
       </div>
 
-      <!-- Right side -->
-      <div class="navbar-nav ms-auto d-flex flex-column flex-lg-row align-items-lg-center gap-2">
-        
+      <!-- Centered Form -->
+      <div class="mx-auto">
         <form class="d-flex" role="search">
           <input class="form-control me-2 search-inp" type="search" placeholder="Search destination" />
           <button class="btn btn-search" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i> Search
           </button>
         </form>
+      
+      </div>
 
+      <!-- Right side -->
+      <div class="navbar-nav ms-auto d-flex flex-column flex-lg-row align-items-lg-center gap-2">
         <a class="nav-link" href="/listings/new">Add new Listing</a>
 
-        <% if(!currUser){ %>
+        <% if (!currUser) { %>
           <a class="nav-link fw-bold" href="/login">Log in</a>
           <a class="nav-link fw-bold" href="/signup">Sign up</a>
         <% } %>
-
-        <% if(currUser){ %>
+        <% if (currUser) { %>
           <a class="nav-link fw-bold" href="/logout">Log out</a>
         <% } %>
       </div>
